@@ -1,0 +1,417 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #9dd148;
+    color: rgb(80, 109, 12);
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+
+    height: 80px;
+    background-color: #faacc0;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.navbar a {
+    padding: 20px;
+    border-radius: 100px;
+    transition: 0.25 ease;
+}
+
+.navbar a:hover {
+    background-color: #da7479;
+    color: #a2c71f;
+    transform: scale(3.2);
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: #3f8118;
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    width: 90%;
+    max-width: 1200px;
+
+    min-height: calc(100vh - 90px);
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.hero-text {
+    width: 60%;
+}
+
+.small-text {
+    color: #f7f1f1;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.1;
+
+    margin-bottom: 18px;
+}
+
+.text {
+     display: inline-block;
+
+    padding: 7px 10px;
+
+    margin-top: 3px;
+
+    background: #36770b;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    width: 370px;
+    height: 7px;
+
+    background-color: #f89da5;
+
+    margin-bottom: 25px;
+}
+
+.description {
+    width: 520px;
+
+    color: #faf6f6;
+    font-size: 16px;
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+}
+
+.text {
+    width: 520px;
+    color: #f1f7ef;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.hero-image {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.image-circle {
+    width: 250px;
+    height: 250px;
+
+    border-radius: 100%;
+
+    overflow: hidden;
+
+    border: 4px solid #da4753;
+
+    background-color: #f19c9c;
+}
+
+.image-circle img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.image-caption {
+    margin-top: 20px;
+
+    color: #f1f7ef;
+
+    font-size: 15px;
+}
+
+.image-caption span {
+    font-size: 22px;
+    margin-right: 7px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #d88ca0,
+        #b96882
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s;
+    margin-top: 12px;;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.35);
+
+    background: linear-gradient(
+        135deg,
+        #e39aad,
+        #c8758d
+    );
+}
+
+
+/* ================= Pengalaman ================= */
+
+.projects {
+    width: 100%;
+    min-height: 300px;
+
+    padding: 30px 20px 35px;
+
+
+    border-top: 5px solid #e05467;
+    border-bottom: 5px solid #e25d90;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* JUDUL */
+
+.projects-title {
+    text-align: center;
+
+    font-size: 26px;
+    color: #0a4604;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+/* CONTAINER KARTU */
+
+.projects-container {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+
+    align-items: stretch;
+}
+
+/* KARTU PROJECT */
+
+.project-card {
+    padding: 20px;
+
+    background: #fc7c82;
+
+    border: 1px solid #81eb57;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 10px rgba(151, 235, 112, 0.3);
+
+    transition: 0.3s ease;
+
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+/* EFEK HOVER */
+
+.project-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #b8444a;
+
+    box-shadow: 0 10px 22px rgba(147, 223, 86, 0.35);
+}
+
+/* JUDUL KARTU */
+
+.project-card h3 {
+    font-size: 15px;
+
+    color: #f1ebf0;
+
+    margin-bottom: 12px;
+}
+
+/* DESKRIPSI */
+
+.project-card p {
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #f1ecf1;
+
+    margin-bottom: 12px;
+}
+
+/* TOOLS */
+
+.project-card .tools {
+     display: inline-block;
+
+    padding: 7px 10px;
+
+    margin-top: 3px;
+
+    background: #ac2b41;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+/* TOMBOL */
+
+.project-btn {
+    display: inline-block;
+
+    padding: 9px 14px;
+
+    margin-top: 3px;
+
+    background: linear-gradient(
+        135deg,
+        #a9e240,
+        #1d6906
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    border-radius: 7px;
+
+    transition: 0.3s ease;
+}
+
+.project-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #e8a8c5,
+        #c67b9f
+    );
+
+    transform: translateY(-2px);
+}
+
+
+footer {
+    height: 53px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f77aa0;
+
+    color: white;
+
+    font-size: 14px;
+}
